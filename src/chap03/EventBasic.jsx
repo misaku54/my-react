@@ -1,4 +1,4 @@
-export default function EventBasic(){
+export default function EventBasic({type}){
   const current = () => {
     const d = new Date();
     switch(type){
