@@ -1,8 +1,9 @@
 export default function ForItem() {
   return (
     <>
-      <a>
-      </a>
+      <div>
+        フラグメントの設定
+      </div>
     </>
   )
 }
