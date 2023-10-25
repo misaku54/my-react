@@ -3,17 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
-// import StateBasic from './chap03/StateBasic';
-import StyledPanel from './chap03/StyledPanel';
+import TitlePanel from './chap03/TitlePanel';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // Number オブジェクトのインスタンスメソッドである toLocaleString は、数値を指定したロケールとオプションに応じた形式で文字列に変換した値を取得することができます
 root.render(
-  <StyledPanel>
-    <p>メンバー募集</p>
-    <p>メンバー募集！！！</p>
-  </StyledPanel>
+  <TitlePanel>
+    <p key='title'>メンバー募集</p>
+    <p key='body'>メンバー募集！！！</p>
+  </TitlePanel>
 );
 
 
