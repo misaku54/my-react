@@ -1,11 +1,12 @@
-export default function ForItem() {
+export default function ForItem({book}) {
   return (
     <>
       <dl>
-        {src.map(elem => 
-          <ForItem book={elem} key={elem.isbn}/>
-        )}
+        <a href={`https://wings.msn.to/books/${book.isbn}/${book.isbn}.jpg`}>
+          {book.title} ({book.price}円)
+        </a>
       </dl>
+      <dd>{book.summary}</dd>
     </>
   );
 }

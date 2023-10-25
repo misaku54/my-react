@@ -3,13 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import StateBasic from './chap03/StateBasic';
+// import StateBasic from './chap03/StateBasic';
+import ForNest from './chap03/ForNest';
+import books from './chap03/books';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // Number オブジェクトのインスタンスメソッドである toLocaleString は、数値を指定したロケールとオプションに応じた形式で文字列に変換した値を取得することができます
 root.render(
-  <StateBasic init={0}></StateBasic>
+  <ForNest src={books} />
 );
 
 
