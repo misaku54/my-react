@@ -1,9 +1,11 @@
 export default function ForItem() {
   return (
     <>
-      <div>
-        フラグメントの設定
-      </div>
+      <dl>
+        {src.map(elem => 
+          <ForItem book={elem} key={elem.isbn}/>
+        )}
+      </dl>
     </>
-  )
+  );
 }
