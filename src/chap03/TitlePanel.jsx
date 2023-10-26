@@ -1,6 +1,7 @@
 export default function TitlePanel({children}) {
   const title = children.find(elem => elem.key === 'title');
   const body  = children.find(elem => elem.key === 'body');
+  console.log(children)
 
   return (
     <div style={{
