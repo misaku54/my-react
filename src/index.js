@@ -3,14 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
-import EventArgs from './chap03/EventArgs';
-import EventPropagation from './chap03/EventPropagation';
+import StateForm from './chap04/StateForm';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // Number オブジェクトのインスタンスメソッドである toLocaleString は、数値を指定したロケールとオプションに応じた形式で文字列に変換した値を取得することができます
 root.render(
-  <EventPropagation />
+  <StateForm />
 );
 
 
