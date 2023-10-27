@@ -3,13 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
-import StateTextarea from './chap04/StateTextarea';
+
+import HookReducer from './chap07/HookReducer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // Number オブジェクトのインスタンスメソッドである toLocaleString は、数値を指定したロケールとオプションに応じた形式で文字列に変換した値を取得することができます
 root.render(
-  <StateTextarea />
+  <HookReducer init={0} />
 );
 
 
