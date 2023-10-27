@@ -15,4 +15,17 @@ export default function StateTextarea() {
   const show = () => {
     console.log(`コメント:${form.comment}`);
   }
+
+  return (
+    <form>
+      <label htmlFor="comment">コメント：</label><br/>
+      <textarea id="comment" name="comment"
+        cols="30" rows="7"
+        value={form.comment}
+        onChange={handleForm}
+      ></textarea><br/>
+      <button type='button' onClick={show}>送信</button>
+    </form>
+    
+  )
 }
