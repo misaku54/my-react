@@ -4,13 +4,13 @@ import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import HookReducer from './chap07/HookReducer';
+import HookReducerUp from './chap07/HookReducerUp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // Number オブジェクトのインスタンスメソッドである toLocaleString は、数値を指定したロケールとオプションに応じた形式で文字列に変換した値を取得することができます
 root.render(
-  <HookReducer init={0} />
+  <HookReducerUp init={0} />
 );
 
 
